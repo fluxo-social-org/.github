@@ -1,1 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" fill="none">
+  <defs>
+    <linearGradient id="umuarama-blue" x1="16" y1="16" x2="496" y2="496" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0066FF" />
+      <stop offset="55%" stop-color="#004ECC" />
+      <stop offset="100%" stop-color="#003594" />
+    </linearGradient>
+    <linearGradient id="emerald-flow" x1="96" y1="360" x2="416" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#5CDDAA" />
+      <stop offset="100%" stop-color="#2BA98F" />
+    </linearGradient>
+  </defs>
 
+  
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="url(#umuarama-blue)" />
+
+  
+  <circle cx="152" cy="196" r="28" fill="#FFFFFF" fill-opacity="0.88" />
+  <path d="M100 282C100 248 122 232 152 232C168 232 181 237 190 246" stroke="#FFFFFF" stroke-opacity="0.88" stroke-width="26" stroke-linecap="round" />
+
+  <circle cx="360" cy="196" r="28" fill="#FFFFFF" fill-opacity="0.88" />
+  <path d="M412 282C412 248 390 232 360 232C344 232 331 237 322 246" stroke="#FFFFFF" stroke-opacity="0.88" stroke-width="26" stroke-linecap="round" />
+
+  
+  <circle cx="256" cy="158" r="38" fill="#FFB800" />
+  <path d="M180 284C180 236 212 212 256 212C300 212 332 236 332 284" stroke="#FFFFFF" stroke-width="32" stroke-linecap="round" />
+
+  
+  <path d="M104 354C164 312 218 312 256 344C294 376 348 376 408 334" stroke="url(#emerald-flow)" stroke-width="32" stroke-linecap="round" />
+  <path d="M136 410C188 378 232 378 264 402C296 426 336 426 380 396" stroke="#FFFFFF" stroke-opacity="0.9" stroke-width="22" stroke-linecap="round" />
+</svg>
