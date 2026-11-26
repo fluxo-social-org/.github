@@ -1,55 +1,90 @@
 <div align="center">
-  <!-- Quando tiver o logo em PNG/SVG, suba em .github/assets/logo.svg e descomente a linha abaixo -->
-  <!-- <img src="./assets/logo.svg" alt="Logo Fluxo Social" width="96" /> -->
+  <img src="./assets/banner.svg" alt="Fluxo Social — Sistema de Gestão Operacional CRAS / SUAS" width="100%" />
 
-  <h1>🏛️ Fluxo Social</h1>
-  <p><strong>"Automatizar para melhor atender"</strong></p>
+  <br /><br />
 
   <p>
-    Sistema de Gestão Operacional web desenvolvido para modernizar o atendimento nas unidades do
-    <strong>Centro de Referência de Assistência Social (CRAS)</strong>.
-  </p>
-
-  <p>
-    <img src="https://img.shields.io/badge/Java-21_LTS-03a678?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java 21" />
-    <img src="https://img.shields.io/badge/Spring_Boot-API-002424?style=for-the-badge&logo=springboot&logoColor=5cddaa" alt="Spring Boot" />
-    <img src="https://img.shields.io/badge/React-19-002424?style=for-the-badge&logo=react&logoColor=5cddaa" alt="React 19" />
-    <img src="https://img.shields.io/badge/TypeScript-5-002424?style=for-the-badge&logo=typescript&logoColor=5cddaa" alt="TypeScript" />
-    <img src="https://img.shields.io/badge/PostgreSQL-16-002424?style=for-the-badge&logo=postgresql&logoColor=5cddaa" alt="PostgreSQL 16" />
-    <img src="https://img.shields.io/badge/Docker-Compose-002424?style=for-the-badge&logo=docker&logoColor=5cddaa" alt="Docker" />
+    <img src="https://img.shields.io/badge/Java-21_LTS-004ECC?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java 21 LTS" />
+    <img src="https://img.shields.io/badge/Spring_Boot-3.4-0F6355?style=for-the-badge&logo=springboot&logoColor=white" alt="Spring Boot 3.4" />
+    <img src="https://img.shields.io/badge/React-19_%2B_Vite_8-004ECC?style=for-the-badge&logo=react&logoColor=white" alt="React 19 + Vite 8" />
+    <img src="https://img.shields.io/badge/PostgreSQL-16_%2B_Flyway-0F6355?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL 16 + Flyway" />
+    <img src="https://img.shields.io/badge/Observabilidade-Prometheus_%2B_Grafana_%2B_Loki-1A1C22?style=for-the-badge&logo=grafana&logoColor=F46800" alt="Prometheus + Grafana + Loki" />
+    <img src="https://img.shields.io/badge/Acessibilidade-e--MAG_%2F_WCAG_2.1_AAA-FFB800?style=for-the-badge&labelColor=1A1B1F" alt="e-MAG / WCAG 2.1 AAA" />
   </p>
 </div>
 
 ---
 
-### 💡 Sobre a Iniciativa
+### 📖 Nossa História: do TCC na UniALFA à Plataforma GovTech
 
-Nascido como Trabalho de Conclusão de Curso (TCC) em **Tecnologia em Sistemas para Internet (UniALFA — Umuarama/PR)**, o **Fluxo Social** substitui milhares de fichas físicas e planilhas descentralizadas por uma plataforma centralizada, segura e aderente à **LGPD**.
+O **Fluxo Social** nasceu em 2026 como Trabalho de Conclusão de Curso (TCC) em **Tecnologia em Sistemas para Internet** na **Faculdade ALFA Umuarama (UniALFA)**, desenvolvido a partir de entrevistas reais em campo com recepcionistas, técnicos e coordenadores dos CRAS da **Secretaria Municipal de Assistência Social (SMAS) de Umuarama - PR**.
 
-* **Recepção e Cadastro Único Local:** busca global por CPF, prevenção de duplicidade entre unidades e preenchimento automático via CEP.
-* **Agendamentos e Encaixes:** controle de agenda por técnico de referência com suporte a encaixes emergenciais justificados.
-* **Prontuário Eletrônico:** registro sigiloso de evoluções com salvamento automático local (*auto-save*) e histórico familiar em linha do tempo.
-* **Gestão, RBAC e Multi-Tenancy:** isolamento lógico por unidade (`cras_id`), perfis de acesso (`RECEPCAO`, `TECNICO`, `COORDENADOR`, `ADMIN`), *soft delete* e auditoria.
+Na visita técnica, encontramos uma dor comum à assistência social pública brasileira: mais de **5.000 fichas físicas em papel** espalhadas por gavetas e planilhas desconectadas, gerando lentidão em atendimentos de urgência, risco de extravio de dados sigilosos, duplicidade de cadastros entre unidades e retrabalho na geração de relatórios do SUAS.
 
----
-
-### 🎨 Identidade Visual — Dark Emerald
-
-A interface foi projetada para longas jornadas no serviço público com foco em ergonomia visual e alto contraste:
-
-| Token | Cor | Uso |
-| :--- | :---: | :--- |
-| `surface` | `#001717` | Fundo principal |
-| `surface-container` | `#002424` | Cards, painéis e modais |
-| `primary` | `#5cddaa` | Ações primárias e destaques |
-| `primary-container` | `#03a678` | Botões e elementos interativos |
+Após a **aprovação pela banca examinadora** (marco histórico congelado na tag `v0.9.0-tcc`), criamos esta organização para governar o projeto de forma colaborativa e conduzir o **Plano Diretor Pós-TCC**: endurecer a arquitetura para entrega gratuita em produção *On-Premise* nos CRAS de Umuarama (`v1.0.0 — Edição CRAS`) e evoluir a base para uma plataforma SUAS completa (`v2.0.0+`).
 
 ---
 
-### 👥 Equipe
+### 🧩 O que o Sistema Entrega
 
-| Integrante | GitHub |
-| :--- | :--- |
-| **Daniel Satel Pereira** | [@seu-usuario](https://github.com/seu-usuario) |
-| **Felipe Pestana** | [@Pestanadev](https://github.com/Pestanadev) |
-| **Keltton Felipe Alves Silveira** | [@usuario-keltton](https://github.com/usuario-keltton) |
+Estruturado como **Monolito Modular** com isolamento lógico por unidade (`cras_id`) e entrega *offline-ready* via Docker + Nginx:
+
+* **Recepção, Triagem e Cadastros Base:** busca global unificada por CPF/NIS (prevenindo duplicidade entre os 3 CRAS e 320 bairros oficiais), nome social, composição familiar e endereço automático via ViaCEP.
+* **Agendamentos, Jornadas e Salas:** escalas configuráveis por unidade e técnico de referência, controle de ocupação de salas físicas e encaixes emergenciais com justificativa obrigatória.
+* **Prontuário Eletrônico & Sigilo SUAS:** evoluções técnicas com *auto-save* local contra oscilações de rede, Plano de Acompanhamento Familiar (PAF), anexos validados via Apache Tika e sigilo psicossocial compartimentado (CFESS/CRESS e CFP).
+* **Benefícios Eventuais & Calamidade Pública:** catálogo de critérios, controle de cotas/orçamento mensal, homologação pela coordenação e aportes de contingência em decretos de emergência.
+* **Relatórios Oficiais & Validação Pública:** Painel CRAS e **RMA Oficial (MDS — Blocos I, II e III)** com exportação em **PDF, XLSX e CSV**, além de portal público `/validar-documento` para conferir declarações e guias emitidas (`FS-UMU-...`).
+* **Segurança, LGPD e Engenharia de Produção:** mascaramento de CPF/NIS no servidor com revelação auditada, RBAC granular com overrides por servidor, bloqueio por inatividade, CI bloqueante (**Gitleaks + Trivy**), observabilidade completa (**Actuator, OpenTelemetry, Prometheus, Loki, Grafana Alloy e Web Vitals**) e suíte nativa de testes de carga (**Grafana k6** simulando 20 mil famílias / 65 mil cidadãos em hardware municipal de 2 vCPU / 4 GB RAM).
+
+---
+
+### 🚀 Linha do Tempo e Roadmap
+
+| Marco | Escopo | Status |
+| :--- | :--- | :---: |
+| **Programa GovTech (Fases 0–7)** | Fundação 12-Factor, RBAC no PostgreSQL, bloqueio de sessão, LGPD/sigilo, acessibilidade e-MAG, territorialização/RMA, Flyway/Nginx e transferências territoriais | **Concluído ✅** |
+| **TCC Aprovado (`v0.9.0-tcc`)** | Entrega completa defendida na UniALFA com 15 ADRs, OpenAPI 3.0 e ambiente Docker de produção | **Congelado ✅** |
+| **Onda P0 (`P0.A`–`P0.G`)** | Higiene, hardening Nginx `:80`, `parametros_suas`, observabilidade ponta a ponta, benchmark k6, reconstrução da matriz RBAC (`P0.A`–`P0.F` ✅) e papel `SUPER_ADMIN` DTI (`P0.G` 📋) | **Em andamento 🔄** |
+| **Onda P1 (`v1.0.0` Edição CRAS)** | Escala SQL (`GROUP BY`), simplificação de UX (Prontuário, Triagem Rápida, Central de Relatórios + `Ctrl+K` + VLibras), PostgreSQL 18 + Boot 4.1 + Java 25 LTS e E2E Playwright | **Planejado 📋** |
+| **Onda P2 (`v2.0.0+` Plataforma SUAS)** | Modo Dual (`onprem` \| `saas` multi-município), CREAS/PAEFI, Centro POP, SCFV, CadÚnico e Gov.BR | **Visão Futura 🔭** |
+
+---
+
+### 🎨 Design System Governamental
+
+Convergência entre **Bold (Bridge/UFSC)**, **DS Gov.BR / e-MAG** e **Material Design 3**, priorizando **Modo Claro ergonômico** para monitores de atendimento público, **Modo Escuro com acento Esmeralda** e **Alto Contraste (WCAG 2.1 AAA)**.
+
+| Token Semântico | Light Mode (Padrão) | Dark Mode | Uso Principal |
+| :--- | :---: | :---: | :--- |
+| **Primária · Azul Real Umuarama** | `#004ECC` / `#0066FF` | `#60A5FA` | Ações principais, botões e links |
+| **Secundária · Amarelo Ouro** | `#FFB800` *(texto `#1A1B1F` obrigatório)* | `#FBBF24` | Alertas, badges e destaques institucionais |
+| **Terciária · Verde Menta / Esmeralda** | `#0F6355` | `#5CDDAA` | Apoio social, prontuário e PAIF |
+| **Superfícies & Tipografia** | `#FFFFFF` / `#F4F4F8` · Manrope + Inter | `#111215` / `#1A1C22` | Cards, painéis e tabelas de alta densidade |
+
+---
+
+### 📚 Repositório e Documentação Canônica
+
+* 🏛️ **[`fluxo-social-org/fluxo-social`](https://github.com/fluxo-social-org/fluxo-social)** — Monorepo oficial (Backend Java/Spring Boot, Frontend React/Vite, Observabilidade e Stress Tests k6)
+* 🗺️ **[Índice Geral da Documentação (`docs/`)](https://github.com/fluxo-social-org/fluxo-social/blob/main/docs/README.md)**
+* 🚀 **[Programa de Modernização GovTech (Fases 0–7)](https://github.com/fluxo-social-org/fluxo-social/blob/main/docs/modernizacao-govtech/README.md)**
+* 📈 **[Plano Diretor Pós-TCC (`v1.0.0` e `v2.0.0+`)](https://github.com/fluxo-social-org/fluxo-social/blob/main/docs/evolucao-pos-tcc/README.md)**
+* 🧱 **[Registros de Decisão Arquitetural (ADRs 001–015)](https://github.com/fluxo-social-org/fluxo-social/tree/main/docs/adrs)**
+* 🎨 **[Design System & Acessibilidade e-MAG](https://github.com/fluxo-social-org/fluxo-social/blob/main/docs/design-system/design-system.md)**
+* ⚡ **[Suíte de Stress Test & Benchmark (`perf/`)](https://github.com/fluxo-social-org/fluxo-social/blob/main/perf/README.md)**
+
+---
+
+### 👥 Equipe Fundadora
+
+| Integrante | GitHub | Foco & Contribuições |
+| :--- | :--- | :--- |
+| **Daniel Satel Pereira** | [@Peridan1](https://github.com/Peridan1) | Arquitetura, governança GovTech, segurança/LGPD, observabilidade, benchmark k6 e plano diretor pós-TCC |
+| **Felipe Pestana** | [@Pestanadev](https://github.com/Pestanadev) | Coautor do Fluxo Social · *<!-- Felipe: fique à vontade para adicionar seus destaques e links aqui -->* |
+| **Keltton Felipe Alves Silveira** | [@Keltton](https://github.com/Keltton) | Coautor do Fluxo Social · Integração de API e módulos operacionais · *<!-- Keltton: fique à vontade para adicionar seus destaques e links aqui -->* |
+
+---
+
+<div align="center">
+  <sub>Desenvolvido com propósito público em Umuarama - PR · Licença MIT</sub>
+</div>
