@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" width="1200" height="260" fill="none">
+  <defs>
+    <linearGradient id="card-bg" x1="0" y1="0" x2="1200" y2="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#111215" />
+      <stop offset="55%" stop-color="#1A1C22" />
+      <stop offset="100%" stop-color="#111215" />
+    </linearGradient>
+    <radialGradient id="orb-blue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(220 40) rotate(25) scale(420 220)">
+      <stop stop-color="#0066FF" stop-opacity="0.28" />
+      <stop offset="1" stop-color="#0066FF" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="orb-gold" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1060 60) scale(300 180)">
+      <stop stop-color="#FFB800" stop-opacity="0.18" />
+      <stop offset="1" stop-color="#FFB800" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="orb-emerald" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(920 240) scale(340 160)">
+      <stop stop-color="#5CDDAA" stop-opacity="0.18" />
+      <stop offset="1" stop-color="#5CDDAA" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="icon-blue" x1="0" y1="0" x2="128" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0066FF" />
+      <stop offset="100%" stop-color="#003EA3" />
+    </linearGradient>
+    <clipPath id="banner-clip">
+      <rect x="0" y="0" width="1200" height="260" rx="20" />
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#banner-clip)">
+    
+    <rect width="1200" height="260" fill="url(#card-bg)" />
+    <rect width="1200" height="260" fill="url(#orb-blue)" />
+    <rect width="1200" height="260" fill="url(#orb-gold)" />
+    <rect width="1200" height="260" fill="url(#orb-emerald)" />
+
+    
+    <rect x="0" y="0" width="400" height="7" fill="#004ECC" />
+    <rect x="400" y="0" width="400" height="7" fill="#FFB800" />
+    <rect x="800" y="0" width="400" height="7" fill="#0F6355" />
+
+    
+    <g transform="translate(64 68)">
+      <rect width="128" height="128" rx="30" fill="url(#icon-blue)" />
+      <circle cx="38" cy="49" r="7.5" fill="#FFFFFF" fill-opacity="0.88" />
+      <path d="M24 72C24 63 30 58 38 58C42 58 46 59.5 48 62" stroke="#FFFFFF" stroke-opacity="0.88" stroke-width="7" stroke-linecap="round" />
+      <circle cx="90" cy="49" r="7.5" fill="#FFFFFF" fill-opacity="0.88" />
+      <path d="M104 72C104 63 98 58 90 58C86 58 82 59.5 80 62" stroke="#FFFFFF" stroke-opacity="0.88" stroke-width="7" stroke-linecap="round" />
+      <circle cx="64" cy="39" r="10" fill="#FFB800" />
+      <path d="M44 73C44 60 52 53 64 53C76 53 84 60 84 73" stroke="#FFFFFF" stroke-width="8.5" stroke-linecap="round" />
+      <path d="M25 91C41 80 54 80 64 88C74 96 87 96 103 85" stroke="#5CDDAA" stroke-width="8.5" stroke-linecap="round" />
+      <path d="M34 106C47 97 58 97 66 104C74 110 84 110 96 102" stroke="#FFFFFF" stroke-opacity="0.9" stroke-width="6" stroke-linecap="round" />
+    </g>
+
+    
+    <text x="224" y="102" fill="#60A5FA" font-family="system-ui, -apple-system, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="800" letter-spacing="2.4">
+      SISTEMA DE GESTAO OPERACIONAL CRAS · REDE SUAS
+    </text>
+    <text x="224" y="156" fill="#F1F3F9" font-family="system-ui, -apple-system, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif" font-size="52" font-weight="900" letter-spacing="-1">
+      Fluxo Social
+    </text>
+    <text x="224" y="190" fill="#B4B9C8" font-family="system-ui, -apple-system, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="500">
+      "Automatizar para melhor atender" — SMAS Umuarama - PR · UniALFA
+    </text>
+
+    
+    <g transform="translate(888 86)">
+      <rect width="248" height="36" rx="10" fill="#22252E" stroke="#343844" stroke-width="1" />
+      <circle cx="20" cy="18" r="5" fill="#5CDDAA" />
+      <text x="36" y="23" fill="#F1F3F9" font-family="system-ui, -apple-system, &#39;Segoe UI&#39;, Roboto, sans-serif" font-size="13" font-weight="700">
+        TCC Aprovado · v0.9.0-tcc
+      </text>
+    </g>
+    <g transform="translate(888 134)">
+      <rect width="248" height="36" rx="10" fill="#FFB800" />
+      <text x="22" y="23" fill="#1A1B1F" font-family="system-ui, -apple-system, &#39;Segoe UI&#39;, Roboto, sans-serif" font-size="13" font-weight="800">
+        Rumo a v1.0.0 · Edicao CRAS
+      </text>
+    </g>
+  </g>
+  <rect x="0.5" y="0.5" width="1199" height="259" rx="19.5" stroke="#343844" />
+</svg>
